@@ -1,0 +1,119 @@
+body {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: whitesmoke;
+}
+.todo {
+  width: 65%;
+  /* what u deleted from here?i didnt do anythinggggggggg */
+  /* display: flex;
+  flex-direction: column; */
+  background-color: white;
+  border-radius: 10px;
+  padding: 1% 0% 1% 2%;
+  margin: 5% auto; 
+  /* width: 100%; */
+
+}
+
+.head {
+  margin-top: 2%;
+}
+
+h4 {
+  display: unset;
+  margin: 1% 0% 10% 1%;
+}
+
+#inputListItem {
+  width: 80%;
+  padding: 1.5%;
+  margin-top: 2%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+}
+
+#addButton {
+  width: 8%;
+  padding: 1.5% 1%;
+  background-color: royalblue;
+  border: 1.5px solid royalblue;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#addButton:hover {
+  color: whitesmoke;
+  background-color: rgb(16, 34, 88);
+  border-color: rgb(16, 34, 88);
+}
+
+
+
+.list-items {
+  width: 92%;
+}
+
+.list-items li{
+  padding: 1.5% 2% 2% 0%;
+  border-bottom: 0.5px solid rgb(175, 175, 175, 0.75);
+  background-color: white;
+  margin-bottom: .5%;
+}
+
+ul {
+  display: unset;
+  list-style-type:none;
+}
+
+ul li {
+  /* cursor: pointer; */
+  font-size: 14px;
+}
+
+li input {
+  /* margin-right: 2%; */
+  margin-left: 2%;
+  /* padding-right: 5%; */
+}
+
+/* ul li:hover {
+  
+  background-color: dimgray;
+  color: whitesmoke;
+} */
+
+.task {
+  display: unset;
+}
+
+input[type=checkbox]:checked~.task {
+  text-decoration: line-through;
+  /* from where? either w3 or stackoverflow...what u searched?good question...yaad nahi bahut kuch search kiya
+  ok, what does tilde sign means?...kuch subelemnt i  */
+}
+
+input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
+.close {
+  float: right;
+  justify-content: center;
+  margin-top: 0%;
+  color: red;
+  font-size: 125%;
+  font-weight: lighter;
+}
+
+.close:hover {
+  /* rgba => a stands for transpareny level ranfes from 1 to 0?kya1-0? 1=> full opaque 0=> full transparentok */
+  /* color: rgb(194, 9, 9); */
+  cursor: pointer;
+  font-size: 135%;
+  font-weight: bolder;
+}
+/* this much code only?yo
+bas wohi do toh change kiya tumne🤣🤣🤣 godf uis giving u punisment 😒*/
