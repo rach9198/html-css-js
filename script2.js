@@ -64,10 +64,9 @@ function ui(toDoArr) {
   // so we have to change the innser text of div which is having the class task
   // as it is an array we have to specify the index [0]
   // with in an array we have object and object is having attbuite 'info' which we are calling by dot operator.
-  // task = task.innerHTML = toDoArr[0].info;
+  task = task.innerHTML = toDoArr[0].info;
   // u are sleepy ?yup
 
-  // fine we will do baad meitomo again papa home...ok..baata deyna whenever u want to do .okaay tata
   
 }
 
