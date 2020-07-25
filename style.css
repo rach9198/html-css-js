@@ -112,7 +112,7 @@ input[type=checkbox]:hover {
   /* rgba => a stands for transpareny level ranfes from 1 to 0?kya1-0? 1=> full opaque 0=> full transparentok */
   /* color: rgb(194, 9, 9); */
   cursor: pointer;
-  font-size: 135%;
+  font-size: 142%;
   font-weight: bolder;
 }
 /* this much code only?yo

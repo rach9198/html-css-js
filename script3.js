@@ -25,6 +25,27 @@ function ui(toDoArr) {
   // so we dont want previous sata to be present,first we will remove all teh conetent anf then for will keep on adding. easy?haan.. its just that u are not trying
   unorderedListItems.innerHTML = '';
 
+  // // u can use tradition for loop also. try doing that once
+  // // 1.
+  // console.log('using of');
+  // for(let singleToDo of allToDo) {
+  //   console.log(singleToDo);
+  // }
+
+  // // 2.
+  // console.log('using in');
+  // for(let singleToDo in allToDo) {
+  //   console.log(singleToDo);
+  // }
+
+  // // 3.
+  // for(let i = 0; i < allToDo.length; i++) {
+  //   console.log(allToDo[i].info);
+  // }
+
+
+  // create script4.js
+
   for(let singleToDo of allToDo) {
 
     // console.log(singleToDo);
@@ -59,15 +80,14 @@ function ui(toDoArr) {
     // here we are craete html tahs within 'unorderedListItems' ie ul ellement. 
     // you know about +=  operator right?haan... it appending li tags as the for loop gaocheasa.
     // es5
-    unorderedListItems.innerHTML += '<li><input type="checkbox">     <div class="task">'+ singleToDo.info +'</div>    <span class="close">x</span></li>';
+    // unorderedListItems.innerHTML += '<li><input type="checkbox">     <div class="task">'+ singleToDo.info +'</div>    <span class="close">x</span></li>';
     // ok?ok..got it?kindoff...i'll ask tom doubts.. can u tell whats ahappening rn? whatever u understood, type karo baatao..new list create ho raha hai..vahi how?
 
-    // u remember `` in js?no
-    // `` : this is new way of reprenting strings in ES6
-    //   let li = ` <li><input type="checkbox"> 
-    //   <div class="task"> Lorem ipsum dolor sit, amet</div>
-    //   <span class="close">x</span>
-    // </li>`
+    // es6.. u got this?yup
+    unorderedListItems.innerHTML +=`<li><input type="checkbox"> 
+    <div class="task"> ${singleToDo.info}</div>
+    <span class="close">x</span>  
+  </li>`;
     // what is going wrong?its not creating new list..search on google onec abhi
     
 
@@ -78,3 +98,25 @@ function ui(toDoArr) {
 }
 
 addButton.addEventListener('click', addToDoItem);
+
+
+// before wwe start, we want list to be added after pressing enter key. rn we have to click on button
+
+inputListItem.addEventListener('keypress', function(e){
+  // console.log(e);
+  // console.log(e.key);
+  // console.log(e.keyCode);
+  // if enter key is pressed, whaich function should excute. can u write the condition?
+  // ? conditino dont know - on keypress call allToDoItem...i did that pehle it didnt workkkkkkkkk..ok. the way you used call method was wrong.okok
+  // u want to learn react?haan ku..maybe iwill be teaching react in to inifidata online....woooww.noice
+  // so u can also join in meeting with my name...tqtqa. react is very vast but i will be only teaching basics things and little bit advance bec sir just charging 3k from each student as they are teaching online.ach asoa so in 5 days try to learn as much js as u can but i will teaching js to them from screatch.haan okay
+  if (e.keyCode == 13) {
+    addToDoItem();   
+  }
+});
+
+// so whenever an keyis pressed in that box, key is recorded. we are interested in enter key
+// are u getting?yaya
+// so ither u can use e.key to get the key name which is pressed or its value
+// what is 'e'? can u tell?argument..its a event object. what we do in html page (or DOM) that is an event and it recorded.
+// other than keypress, there is keydown, keyup.. search ;key events in dom and read from mdn page
