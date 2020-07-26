@@ -1,13 +1,18 @@
 const addButton = document.querySelector('#addButton');
 const inputListItem = document.querySelector('#inputListItem');
-const allToDo = [{id:0, info:'hello'}];
-let counter  = 1;
+let allToDo = [];
+let counter  = 0;
 
 var addToDoItem = function(e) {
   const data = {
+    // what is 'id'? 
+    // id=> key
+    // counter => value
+    // if u are within object, u will not say varaible
     id: counter,
     info: inputListItem.value
   };
+
   // 
   allToDo.unshift(data);
   counter++;
@@ -21,12 +26,17 @@ const listItem = document.querySelector('.listItem');
 function ui(toDoArr) {
   unorderedListItems.innerHTML = '';
   for(let singleToDo of allToDo) {
-    unorderedListItems.innerHTML +=`<li><input type="checkbox"> 
+    unorderedListItems.innerHTML +=`<li><input type="checkbox" style="margin-right: 1.5%"> 
     <div class="task"> ${singleToDo.info}</div>
-    <span onclick=deleteToDo(event) data-id="${singleToDo.id}" class="close">x</span>  
+    <div class="update">
+    <i class="fa fa-pencil" id="edit" aria-hidden="true"></i>
+    <span onclick=deleteToDo(event) data-id="${singleToDo.id}" class="close">x</span>
+
+    </div>
     </li>`;
   }
 }
+// <span onclick=deleteToDo(event) data-id="${singleToDo.id}" class="close"><i class="fa fa-times"  aria-hidden="true"></i></span>
 
 addButton.addEventListener('click', addToDoItem);
 
@@ -53,11 +63,29 @@ function deleteToDo(event) {
   // console.log(event.path[0].dataset);
 
   // within dataset, we want to extract the value of data-id
-  console.log(event.path[0].dataset.id);
-  // we have id, now can u detele that speucific todolist?shift nai..u do ..vo top element deletee not specific..yup 
-  // how do u delete elemnets from an array?dont know.. search karna
+  // console.log(event.path[0].dataset.id);
+  let deleteId = event.path[0].dataset.id;
+
+  // so we have an array and inside it object for iondivudal todolist..right?haan
+  // console.log(allToDo);
+
+  // now what we want... this array should contain all the todolist except the one one whose id has been passed to us by 'event.path[0].dataset.id'. can u do it? it similar to what u did in text.js
+  allToDo = allToDo.filter(function(obj){
+
+    // code
+    // obj ka id?.id?.. object kai andar id HTMLDetailsElement.apply.... object ka kuch id nahi HTMLDetailsElement, and neither we care about it ..toh lhs kaise
+
+    // ok, just seee
+    console.log(obj);
+    // tell me how do we extract/read from  values from objienfoc?t?info?..write browing through mobile ah?NOooo
+    // not happy.. i thought u are getting everything...samajh nahi aaya to baata deyti na..to ask i should go thourgh na..ok
+    // should i move ahead or u will revise>(.if u get time)..revise better..ok..not agood student😅..yo
+    // ok boi bye
+
+   });
+
 }
 
 
 // next staep... before cross icon, put pencil icon so that user can update /edit that dotolist.ok?okaay
-// push the changes and close
+// push the changes and close tq boi..bye

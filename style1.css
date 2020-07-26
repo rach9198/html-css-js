@@ -1,20 +1,13 @@
 body {
 	font-family: "Comic Sans MS", cursive, sans-serif;
   background-color: whitesmoke;
-  /* background-color: black; */
 }
 .todo {
   width: 65%;
-  /* what u deleted from here?i didnt do anythinggggggggg */
-  /* display: flex;
-  flex-direction: column; */
   background-color: white;
-  /* background-color: gray; */
   border-radius: 10px;
   padding: 1% 0% 1% 2%;
   margin: 5% auto; 
-  /* width: 100%; */
-
 }
 
 .head {
@@ -63,6 +56,7 @@ h4 {
   border-bottom: 0.5px solid rgb(175, 175, 175, 0.75);
   background-color: white;
   margin-bottom: .5%;
+  justify-content: center;
 }
 
 ul {
@@ -71,7 +65,6 @@ ul {
 }
 
 ul li {
-  /* cursor: pointer; */
   font-size: 14px;
   display: flex;
 }
@@ -81,26 +74,16 @@ li input {
   margin-left: 2%;
 }
 
-/* ul li:hover {
-  
-  background-color: dimgray;
-  color: whitesmoke;
-} */
 
 .task {
   display: unset;
   justify-content: center;
   width: 88%;
-  /* display: block; */
-  /* white-space: pre; */
-  /* word-break: break-all; */
   overflow-wrap: break-word;
 }
 
 input[type=checkbox]:checked~.task {
   text-decoration: line-through;
-  /* from where? either w3 or stackoverflow...what u searched?good question...yaad nahi bahut kuch search kiya
-  ok, what does tilde sign means?...kuch subelemnt i  */
 }
 
 input[type=checkbox]:hover {
@@ -116,16 +99,12 @@ input[type=checkbox]:hover {
 }
 
 .close:hover {
-  /* rgba => a stands for transpareny level ranfes from 1 to 0?kya1-0? 1=> full opaque 0=> full transparentok */
-  /* color: rgb(194, 9, 9); */
   cursor: pointer;
   font-size: 140%;
   font-weight: bolder;
 }
-/* this much code only?yo
-bas wohi do toh change kiya tumne🤣🤣🤣 godf uis giving u punisment 😒*/
 #edit {
-  padding: 0px 0 0 0;
+  padding: 5px 0 0 0;
   color:  rgb(15, 43, 128);
   margin-right: 4px;
 }
@@ -138,12 +117,9 @@ bas wohi do toh change kiya tumne🤣🤣🤣 godf uis giving u punisment 😒*/
 
 
 .update {
-  display: unset;
-  width: max-content;
-  
-  /* margin-right: 0px; */
-  /* right: 0px; */
-    /* float: right; */
+  justify-content: center;
+  /* display: unset; */
+  /* width: max-content; */
   /* display: flex; */
   margin-left: auto;
 }
