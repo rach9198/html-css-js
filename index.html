@@ -1,50 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- before starting, what we is that ludo icon should appear beside the title of the webpage instaed that globe -->
+  <!-- u know whar are png imgs?png images are those images which doesnt have any backgroud.. just the img, thats all -->
+  <!-- in that baday website, when u cut the cake,in the backgroud that spakle img is png.  -->
+  <!-- img u choose is not png -->
+
+  <!-- setting up icon -->
+  <link rel="icon" href="./imgs/iconludo.png">
+  <!-- got it?yo.. there is one more way which i dont know..u can serach -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- accha hai -->
+  <link rel="stylesheet" href="./style.css">
   <title>Ludo</title>
 </head>
 <body>
 
-  <table>
 
-    <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-      <td>12</td>
-      <td>13</td>
-      <td>14</td>
-      <td>15</td>   
-    </tr>
+  <!-- copy the file this folder -->
+  <!-- so we will divide our ludo in 9 main parts..got that img?yup -->
+  <!-- and those 9 subsections will be divided into 3 main section..top. middle, bottom -->
 
-    <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-      <td>12</td>
-      <td>13</td>
-      <td>14</td>
-      <td>15</td>   
-    </tr>
-  </table>
-  
+  <!-- we will create ludo in divs not in table form... 3 main sectiona nd within it 3 sunsection . now can u try?trty whatm..wowow... create ludook ok...kar..abhi?yesi'll do you see tomo..do one section.. rest two afterwards fuck u, now i am teaching, do as i say. i am te..a.c.he.r...........so you do one sec...i do the other two...first test .....knaarh id ont waste time
+  nahi karwani bejjaatii...stfu and start writing html..html..-->
+  <section class="top">
+    <!-- craete a div with class name top-left...ho?yes..start...yasss you can do it!!teachers first..y doing like this rachana?,b,e saserious..karo ab. good now what?define sizE?...in topmiddle, how many boxes?18?ya3 colums 6 boxes each. so crete 3 coloums in top-middle and 6 boxes in each.kar..t 6 divs in each?ya classname?box-->
+    <!-- to copy/duplicate press shift + alt and the up or down arrow together -->
+    <!-- in top-left and top-right, 4 subdivs each right?yo..kar..box only? no..sub-box -->
+    <!-- rn, we cant see anything.. its better to give number so that we can see -->
+    <div class="top-left">
+      <div class="sub-boxs-holder">
+        <div class="sub-box">1A</div>
+        <div class="sub-box">1B</div>
+      </div>
+      <div class="sub-boxs-holder">
+        <div class="sub-box">1C</div>
+        <div class="sub-box">1D</div>
+      </div>
+    </div>
+    <div class="top-middle">
+      <div class="tleft">
+        <div class="box">01</div>
+        <div class="box">02</div>
+        <div class="box">03</div>
+        <div class="box">04</div>
+        <div class="box">05</div>
+        <div class="box">06</div>
+      </div>
+      <div class="tmiddle">
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+      </div>
+      <div class="tright">
+        <div class="box">21</div>
+        <div class="box">22</div>
+        <div class="box">23</div>
+        <div class="box">24</div>
+        <div class="box">25</div>
+        <div class="box">26</div>
+      </div>
+    </div>
+    <div class="top-right">
+      <div class="sub-boxs-holder">
+        <div class="sub-box">2A</div>
+        <div class="sub-box">2B</div>
+      </div>
+      <div class="sub-boxs-holder">
+        <div class="sub-box">2C</div>
+        <div class="sub-box">2D</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="middle">
+    <div class="middle-left">
+      <div class="mtop">
+        <div class="box">01</div>
+        <div class="box" style="background-color: ;">02</div>
+        <div class="box">03</div>
+        <div class="box">04</div>
+        <div class="box">05</div>
+        <div class="box">06</div>
+      </div>
+      <div class="mmiddle">
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+      </div>
+      <div class="mbottom">
+        <div class="box">21</div>
+        <div class="box">22</div>
+        <div class="box">23</div>
+        <div class="box">24</div>
+        <div class="box">25</div>
+        <div class="box">26</div>
+      </div>
+    </div>
+
+    <div class="middle-middle">
+      <div class="sub-boxs-holder">
+        <div class="home-box">1H</div>
+        <div class="home-box">2H</div>
+      </div>
+      <div class="sub-boxs-holder">
+        <div class="home-box">3H</div>
+        <div class="home-box">4H</div>
+      </div>
+    </div>
+
+
+    <div class="middle-right">
+      <div class="mtop">
+        <div class="box">01</div>
+        <div class="box">02</div>
+        <div class="box">03</div>
+        <div class="box">04</div>
+        <div class="box">05</div>
+        <div class="box">06</div>
+      </div>
+      <div class="mmiddle">
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+      </div>
+      <div class="mbottom">
+        <div class="box">21</div>
+        <div class="box">22</div>
+        <div class="box">23</div>
+        <div class="box">24</div>
+        <div class="box">25</div>
+        <div class="box">26</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bottom">
+    <div class="bottom-left">
+      <div class="sub-boxs-holder">
+        <div class="sub-box">3A</div>
+        <div class="sub-box">3B</div>
+      </div>
+      <div class="sub-boxs-holder">
+        <div class="sub-box">3C</div>
+        <div class="sub-box">3D</div>
+      </div>
+    </div>
+    <div class="bottom-middle">
+      <div class="bleft">
+        <div class="box">01</div>
+        <div class="box">02</div>
+        <div class="box">03</div>
+        <div class="box">04</div>
+        <div class="box">05</div>
+        <div class="box">06</div>
+      </div>
+      <div class="bmiddle">
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+      </div>
+      <div class="bright">
+        <div class="box">21</div>
+        <div class="box">22</div>
+        <div class="box">23</div>
+        <div class="box">24</div>
+        <div class="box">25</div>
+        <div class="box">26</div>
+      </div>
+    </div>
+    <div class="bottom-right">
+      <div class="sub-boxs-holder">
+        <div class="sub-box">4A</div>
+        <div class="sub-box">4B</div>
+      </div>
+      <div class="sub-boxs-holder">
+        <div class="sub-box">4C</div>
+        <div class="sub-box">4D</div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>

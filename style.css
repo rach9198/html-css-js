@@ -1,18 +1,124 @@
-table {
-  border: 1px solid black;
-  width: 5%;
+.top {
+  display: flex;
+  
+}
+
+.top-left {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 51, 51);
+  /* background-color: rgb(255, 77, 77); */
+  /* height: 50%; */
+  /* width: 30%; */
+  /* border: 1px solid black; */
+
+}
+
+.tmiddle {
+  background-color: rgb(0, 230, 0);
+}
+
+.sub-box {
+  border: 0.5px solid black;
+  width: 116px;
+  /* width: 70%; */
 }
 
 
-.table td {
-  width: 150px;
-  padding: 15%;
-  margin: 15%;
-  border: 1px solid gray;
+
+.sub-boxs-holder {
+  display: flex;
+  height: 50%;
 }
 
-.table tr {
-  padding: 10%;
-  margin: 15%;
-  border: 1px solid gray;
+.top-middle {
+  display: flex;
+  height: 50%;
+  
+}
+.box {
+  /* height: 20%; */
+  height: 38px;
+  width: 38px;
+  
+  border: 0.5px solid red;
+}
+
+.top-right {
+  /* width: 30%; */
+  /* background-color: rgb(0, 204, 0);  */
+  /* background-color: rgb(77, 255, 77); */
+  background-color: rgb(0, 230, 0);
+
+}
+/* easy?yoss... define the width and height of each box and for now give the border
+i;ll have to go down..abhi?ya...bigbasket will come in some time.ok...back after?......pata nahi...height kitnaaaa as u wish...ok 
+bye,let me know okok i may not go also...waaahhh...aree if shes using for festival i shouldnt touch 😂😂hey raam....vasay accha hai.. 
+u are saved from kal ka tourcher phir bhi uthne ka nahane ka aur ek jagah baithne ka...essa he hona chaiya, u also so with me na😏😏😏
+pagal.. i will go and bring milk, i asked mom when u said u are going, now she said to bring milk..noiicee...jaaoo...i'll do..ok..
+u have 15 min... else do section middle and bottomokokokok...bhaaagoo
+*/
+.middle {
+  display: flex;
+}
+
+.middle-left {
+  display: flex;
+  flex-direction: column;
+  
+}
+.mtop {
+  display: flex;
+}
+
+.home-box {
+  border: 0.5px solid black;
+  width: 57.5px;
+}
+
+.mmiddle {
+  display: flex;
+}
+
+.middle-left .mmiddle {
+ 
+  background-color: rgb(255, 51, 51);
+}
+
+.middle-right .mmiddle {
+  background-color: rgb(255, 219, 77);
+}
+
+.mbottom {
+  display: flex;
+}
+
+
+
+
+
+.bottom {
+  display: flex;
+}
+
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(51, 204, 255); */
+  /* background-color: rgb(102, 194, 255); */
+  background-color: rgb(77, 184, 255);
+}
+
+
+.bottom-middle {
+  display: flex;
+}
+
+.bmiddle {
+  background-color: rgb(77, 184, 255);
+}
+
+.bottom-right {
+  /* background-color: rgb(255, 173, 51); */
+  background-color: rgb(255, 219, 77);
 }
