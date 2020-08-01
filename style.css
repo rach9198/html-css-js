@@ -1,63 +1,157 @@
+body {
+  text-align: center;
+}
+
+.main {
+  display: inline-block;
+}
+
 .top {
   display: flex;
-  
 }
 
 .top-left {
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 51, 51);
-  /* background-color: rgb(255, 77, 77); */
-  /* height: 50%; */
-  /* width: 30%; */
-  /* border: 1px solid black; */
-
+  background-color: rgb(255, 51, 51, 0.9);
+  width: 220px;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  border-radius: 10%;
 }
 
-.tmiddle {
-  background-color: rgb(0, 230, 0);
+.out {
+  height: 80%;
+  width: 80%;
+  margin: 10% auto;
+  background-color: #fff;
+  border-radius: 10%;
 }
-
-.sub-box {
-  border: 0.5px solid black;
-  width: 116px;
-  /* width: 70%; */
-}
-
-
 
 .sub-boxs-holder {
   display: flex;
   height: 50%;
 }
 
+.sub-box-tl {
+  border: 2px dotted rgb(255, 51, 51);
+  background-color: rgba(255, 51, 51, 0.3);
+  text-align: center;
+  justify-content: center;
+  margin: auto auto;
+  height: 60%;
+  width: 30%;
+  border-radius: 50%;
+}
+
+.sub-box-tl .red-pawn {
+  font-size: xx-large;
+  color: red;
+  animation-name: redMovement;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes redMovement {
+  0% {
+    transform: translateY(-500%);
+  }
+
+  25% {
+    transform: translateY(-400%);
+  }
+
+  50% {
+    transform: translateY(-300%);
+  }
+
+  75% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .top-middle {
   display: flex;
   height: 50%;
-  
 }
+
 .box {
-  /* height: 20%; */
-  height: 38px;
-  width: 38px;
-  
-  border: 0.5px solid red;
+  height: 36px;
+  width: 36px;
+  border: 0.5px solid rgba(30, 30, 30, 0.4);
+}
+
+.box-safe {
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  justify-content: center;
+  /* font-size: x-large;
+  opacity: 0.7; */
+  border: 0.5px solid rgb(30, 30, 30, 0.4); 
+}
+
+.box-home-g {
+  height: 36px;
+  width: 36px;
+  background-color: rgb(0, 230, 0, 0.9);
+  border: 0.5px solid rgb(30, 30, 30, 0.4);
 }
 
 .top-right {
-  /* width: 30%; */
-  /* background-color: rgb(0, 204, 0);  */
-  /* background-color: rgb(77, 255, 77); */
-  background-color: rgb(0, 230, 0);
+  width: 220px;
+  background-color: rgb(0, 230, 0, 0.9);
+  margin-left: 1%;
+  margin-bottom: 1%;
+  border-radius: 10%;
+}
+
+.sub-box-tr {
+  border: 2px dotted rgb(0, 230, 0);
+  background-color: rgba(0, 230, 0, 0.3);
+  text-align: center;
+  justify-content: center;
+  margin: auto auto;
+  height: 60%;
+  width: 30%;
+  border-radius: 50%;
+}
+
+.sub-box-tr .green-pawn {
+  font-size: xx-large;
+  color: rgb(3, 199, 45);
+  animation-name: greenMovement;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 
 }
-/* easy?yoss... define the width and height of each box and for now give the border
-i;ll have to go down..abhi?ya...bigbasket will come in some time.ok...back after?......pata nahi...height kitnaaaa as u wish...ok 
-bye,let me know okok i may not go also...waaahhh...aree if shes using for festival i shouldnt touch 😂😂hey raam....vasay accha hai.. 
-u are saved from kal ka tourcher phir bhi uthne ka nahane ka aur ek jagah baithne ka...essa he hona chaiya, u also so with me na😏😏😏
-pagal.. i will go and bring milk, i asked mom when u said u are going, now she said to bring milk..noiicee...jaaoo...i'll do..ok..
-u have 15 min... else do section middle and bottomokokokok...bhaaagoo
-*/
+
+@keyframes greenMovement {
+  0% {
+    transform: translateY(-500%);
+  }
+
+  25% {
+    transform: translateY(-400%);
+  }
+
+  50% {
+    transform: translateY(-300%);
+  }
+
+  75% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .middle {
   display: flex;
 }
@@ -65,37 +159,53 @@ u have 15 min... else do section middle and bottomokokokok...bhaaagoo
 .middle-left {
   display: flex;
   flex-direction: column;
-  
 }
+
 .mtop {
   display: flex;
 }
 
-.home-box {
-  border: 0.5px solid black;
-  width: 57.5px;
+.box-home-r {
+  height: 36px;
+  width: 36px;
+  background-color: rgb(255, 51, 51, 0.9);
+  border: 0.5px solid rgb(30, 30, 30, 0.4);
 }
 
 .mmiddle {
   display: flex;
 }
 
-.middle-left .mmiddle {
- 
-  background-color: rgb(255, 51, 51);
+.middle-middle {
+  /* width of each box?38px*4 39*4...but height 38*4..thik hai na?yo*/
+  /* width: 117px; */
+  /* height of each box?38 *3hi hai ...why top and bottom distorting and not middle*/
+  /* height: 117px; */
+
+  
+    top:40%;
+    left: 45%;
+    /* width: 1px; */
+    height: 0px;
+    border-left: 55px solid rgb(255, 51, 51);
+    border-right: 55px solid rgb(255, 219, 77);
+    border-top: 55.5px solid rgb(3, 199, 45);
+    border-top: 55.5px solid rgb(0, 230, 0);
+    border-bottom: 58.5px solid rgb(0, 153, 255);
+    
+
 }
 
-.middle-right .mmiddle {
-  background-color: rgb(255, 219, 77);
+.box-home-y {
+  height: 36px;
+  width: 36px;
+  background-color: rgb(255, 219, 77, 0.9);
+  border: 0.5px solid rgb(30, 30, 30, 0.4);
 }
 
 .mbottom {
   display: flex;
 }
-
-
-
-
 
 .bottom {
   display: flex;
@@ -104,21 +214,207 @@ u have 15 min... else do section middle and bottomokokokok...bhaaagoo
 .bottom-left {
   display: flex;
   flex-direction: column;
-  /* background-color: rgb(51, 204, 255); */
-  /* background-color: rgb(102, 194, 255); */
-  background-color: rgb(77, 184, 255);
+  width: 220px;
+  background-color: rgb(0, 153, 255, 0.9);
+  margin-top: 1%;
+  margin-right: 1%;
+  border-radius: 10%;
 }
 
+.sub-box-bl {
+  border: 2px dotted rgb(0, 153, 255);
+  background-color: rgba(0, 153, 255, 0.3);
+  text-align: center;
+  justify-content: center;
+  margin: auto auto;
+  height: 60%;
+  width: 30%;
+  border-radius: 50%;
+}
+
+.sub-box-bl .blue-pawn {
+  font-size: xx-large;
+  color: rgb(0, 89, 255);
+  animation-name: blueMovement;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+
+}
+
+@keyframes blueMovement {
+  0% {
+    transform: translateY(-500%);
+  }
+
+  25% {
+    transform: translateY(-400%);
+  }
+
+  50% {
+    transform: translateY(-300%);
+  }
+
+  75% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .bottom-middle {
   display: flex;
 }
 
-.bmiddle {
-  background-color: rgb(77, 184, 255);
+.box-home-b {
+  height: 36px;
+  width: 36px;
+  background-color: rgba(0, 153, 255, 0.9);
+  border: 0.5px solid rgb(30, 30, 30, 0.4);
 }
 
 .bottom-right {
-  /* background-color: rgb(255, 173, 51); */
-  background-color: rgb(255, 219, 77);
+  width: 220px;
+  background-color: rgb(255, 219, 77, 0.9);
+  margin-left: 1%;
+  margin-top: 1%;
+  border-radius: 10%;
 }
+
+.sub-box-br {
+  border: 2px dotted rgb(255, 219, 77);
+  background-color: rgba(255, 219, 77, 0.3);
+  text-align: center;
+  justify-content: center;
+  margin: auto auto;
+  height: 60%;
+  width: 30%;
+  border-radius: 50%;
+}
+
+.sub-box-br .yel-pawn {
+  font-size: xx-large;
+  color: rgb(255, 217, 0);
+  animation-name: yelMovement;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+
+}
+
+@keyframes yelMovement {
+  0% {
+    transform: translateY(-500%);
+  }
+
+  25% {
+    transform: translateY(-400%);
+  }
+
+  50% {
+    transform: translateY(-300%);
+  }
+
+  75% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fa-star{ 
+  /* color: rgb(90, 80, 25); */
+  font-size: x-large;
+  opacity: 0.3;
+  justify-content: center;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.start {
+  /* color: rgb(90, 80, 25); */
+  font-size: x-large;
+  text-align: center;
+  justify-content: center;
+  padding-top: 7px;
+  opacity: 0.4;
+}
+
+
+
+
+/* 
+.sub-box {
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: auto auto;
+  height: 60%;
+  width: 30%;
+  border-radius: 50%;
+}
+
+.home-box {
+  border: 0.5px solid black;
+  width: 57.5px;
+} */
+
+
+/* now we will do animation. as soon as user lands up her, goti will drop from top
+what we call goti in english?no...pawn may be..tujay be nai pata😂😂 */
+
+
+/* 
+.sub-box-tl .red-pawn {
+  font-size: xx-large;
+  color: red;
+   /* where we want some kind of moment, we use animation property. it has 3 things: name of animation, duration and type of animation */
+/* u can define these 3 things in one line or sepreate */
+/* animation: redMovemet .3s linear; */
+/* or 
+   animation-name: redMovement;
+   animation-duration: 2s;
+   /* animation-timing-function: linear; 
+   animation-timing-function: ease-out;
+   /* u check out other */
+/* orther most commly used are in-out, out-inye dekha hai..video me..ok */
+/* u know animation?not inn detaaail */
+
+/* if u want keep repeating the animation */
+/* animation-iteration-count: infinite; */
+/* bydefault only once will occure 
+}
+
+/* to define animation, we will use @keyframe animationName 
+@keyframes redMovement {
+  /* now, we have to tell at what time what should happen...2 seconds will be convered to 100%..50% means 1 second.right?hellohaaaaaaan..25% means ?0.5yo 
+  0% {
+    /* withit define the style what should happen at 0% ie in starting */
+/* initially othing should be seen */
+/* visibility: hidden; */
+/* color: #fff; 
+    transform: translateY(-500%);
+  }
+  25% {
+    transform: translateY(-400%);
+  }
+  50% {
+    transform: translateY(-300%);
+
+  }
+  75% {
+
+    transform: translateY(-200%);
+
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* got it? at last🤣🤣🤣🔥🔥🔥
+translateY will change postion with respect to Y axis and transalteX wrt X axishh.aaaannnnn???
+y ka bolne se kaafi hai...x z i can understand ..kitna type karoge sir😱 
+ */
