@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  margin-top: 2px;
 }
 
 .main {
@@ -14,9 +15,9 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 51, 51, 0.9);
-  width: 220px;
-  margin-right: 1%;
-  margin-bottom: 1%;
+  width: 230px;
+  margin-right: 3px;
+  margin-bottom: 3px;
   border-radius: 10%;
 }
 
@@ -45,7 +46,7 @@ body {
 }
 
 .sub-box-tl .red-pawn {
-  font-size: xx-large;
+  font-size: 35px;
   color: red;
   animation-name: redMovement;
   animation-duration: 2s;
@@ -83,11 +84,14 @@ body {
   height: 36px;
   width: 36px;
   border: 0.5px solid rgba(30, 30, 30, 0.4);
+  margin: 1px;
+  border-radius: 3px;
 }
 
 .box-safe {
   height: 36px;
   width: 36px;
+  margin: 1px;
   text-align: center;
   justify-content: center;
   /* font-size: x-large;
@@ -100,13 +104,15 @@ body {
   width: 36px;
   background-color: rgb(0, 230, 0, 0.9);
   border: 0.5px solid rgb(30, 30, 30, 0.4);
+  margin: 1px;
+  border-radius: 3px;
 }
 
 .top-right {
-  width: 220px;
+  width: 230px;
   background-color: rgb(0, 230, 0, 0.9);
-  margin-left: 1%;
-  margin-bottom: 1%;
+  margin-left: 3px;
+  margin-bottom: 3px;
   border-radius: 10%;
 }
 
@@ -122,7 +128,7 @@ body {
 }
 
 .sub-box-tr .green-pawn {
-  font-size: xx-large;
+  font-size: 35px;
   color: rgb(3, 199, 45);
   animation-name: greenMovement;
   animation-duration: 2s;
@@ -170,6 +176,8 @@ body {
   width: 36px;
   background-color: rgb(255, 51, 51, 0.9);
   border: 0.5px solid rgb(30, 30, 30, 0.4);
+  margin: 1px;
+  border-radius: 3px;
 }
 
 .mmiddle {
@@ -187,20 +195,24 @@ body {
     left: 45%;
     /* width: 1px; */
     height: 0px;
-    border-left: 55px solid rgb(255, 51, 51);
-    border-right: 55px solid rgb(255, 219, 77);
-    border-top: 55.5px solid rgb(3, 199, 45);
-    border-top: 55.5px solid rgb(0, 230, 0);
-    border-bottom: 58.5px solid rgb(0, 153, 255);
-    
-
+    border-left: 57px solid rgb(255, 51, 51);
+    border-right: 57px solid rgb(255, 219, 77);
+    /* border-top: 55.5px solid rgb(3, 199, 45); */
+    border-top: 57.5px solid rgb(0, 230, 0);
+    border-bottom: 57.5px solid rgb(0, 153, 255);
+    border-radius: 3px;
+    margin: 1px;
 }
+
+
 
 .box-home-y {
   height: 36px;
   width: 36px;
   background-color: rgb(255, 219, 77, 0.9);
   border: 0.5px solid rgb(30, 30, 30, 0.4);
+  margin: 1px;
+  border-radius: 3px;
 }
 
 .mbottom {
@@ -214,10 +226,10 @@ body {
 .bottom-left {
   display: flex;
   flex-direction: column;
-  width: 220px;
+  width: 230px;
   background-color: rgb(0, 153, 255, 0.9);
-  margin-top: 1%;
-  margin-right: 1%;
+  margin-top: 3px;
+  margin-right: 3px;
   border-radius: 10%;
 }
 
@@ -233,7 +245,7 @@ body {
 }
 
 .sub-box-bl .blue-pawn {
-  font-size: xx-large;
+  font-size: 35px;
   color: rgb(0, 89, 255);
   animation-name: blueMovement;
   animation-duration: 2s;
@@ -272,13 +284,15 @@ body {
   width: 36px;
   background-color: rgba(0, 153, 255, 0.9);
   border: 0.5px solid rgb(30, 30, 30, 0.4);
+  margin: 1px;
+  border-radius: 3px;
 }
 
 .bottom-right {
-  width: 220px;
+  width: 230px;
   background-color: rgb(255, 219, 77, 0.9);
-  margin-left: 1%;
-  margin-top: 1%;
+  margin-left: 3px;
+  margin-top: 3px;
   border-radius: 10%;
 }
 
@@ -294,7 +308,7 @@ body {
 }
 
 .sub-box-br .yel-pawn {
-  font-size: xx-large;
+  font-size: 35px;
   color: rgb(255, 217, 0);
   animation-name: yelMovement;
   animation-duration: 2s;
@@ -327,6 +341,7 @@ body {
 .fa-star{ 
   /* color: rgb(90, 80, 25); */
   font-size: x-large;
+  /* font-size: 30px; */
   opacity: 0.3;
   justify-content: center;
   text-align: center;
@@ -336,10 +351,11 @@ body {
 .start {
   /* color: rgb(90, 80, 25); */
   font-size: x-large;
+  /* font-size: 30px; */
   text-align: center;
   justify-content: center;
-  padding-top: 7px;
-  opacity: 0.4;
+  padding-top: 6px;
+  opacity: 0.3;
 }
 
 
