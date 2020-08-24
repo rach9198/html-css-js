@@ -1,28 +1,22 @@
 main {
   display: flex;
-  /* yos */
 }
 
 .main-dice {
-  /* content illa haatt*/
   height: 50px;
   width: 50px;
   background-color: black;
   margin: auto;
-  /* 👏🏽 nai i was able to see you net slow may be camera off achaa hua ho?????/ */
 }
 
 .left {
   flex: 1;
-  /* papa talkinggg you said lef t and right..border
-  eeey chup i thought border-left and border-roght repeat   shh*/
   border: 1px solid black;
 }
 
 .middle {
   flex: 1;
   text-align: center;
-  /* kya baat..tumko pata hai */
 }
 
 .right {
