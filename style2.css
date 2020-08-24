@@ -1,13 +1,4 @@
-/* if u want to copy and paste mutiple things.. instaed of switching windoes again and again.. copy all the thing one by one. and when u want to paste press windows key and 'v'. karo try..prsee maadi
-vo anushree called now..nptel ka cancel karna hai exam. fine. ho?ya.okdone?lagta toh hai..wapas wohi page khula.. u should have clicked on second option na2nd kaunsa...
-1. refundwohi kiya
-that is only agreeing to it..
-terms and conditions jaise hai vo..yo..thik hi toh hai
-
-now i am out of study zone..hehehe..achaa...want to do html rest 15 min?..tumko kya karna hai...u tell me , u want to do html?...??take a break😂... to karo open camera and chrome..heheh
- */
-
- body {
+body {
 	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
@@ -17,11 +8,9 @@ now i am out of study zone..hehehe..achaa...want to do html rest 15 min?..tumko 
 
 }
 
-
 .header {
 	flex: 1;
 }
-
 
 .navbar {
 	display: flex;
@@ -36,7 +25,6 @@ now i am out of study zone..hehehe..achaa...want to do html rest 15 min?..tumko 
 	justify-content: center;
   padding-right: 4%;
 }
-
 
 .nav-item:hover {
 	border-bottom: 1px dotted black;
@@ -71,7 +59,6 @@ now i am out of study zone..hehehe..achaa...want to do html rest 15 min?..tumko 
 	object-fit: contain;
 }
 
-
 .client {
 	margin-top: 8%;
 	text-align: center;
@@ -85,8 +72,6 @@ now i am out of study zone..hehehe..achaa...want to do html rest 15 min?..tumko 
 	justify-content: center;
 
 	margin: 3% auto;
-
- 
 }
 
 .client-logo {
@@ -99,7 +84,6 @@ now i am out of study zone..hehehe..achaa...want to do html rest 15 min?..tumko 
 .services h2{
 	margin-top: 3%;
 	text-align: center;
-
 }
 
 #serv-desc {
@@ -123,6 +107,7 @@ now i am out of study zone..hehehe..achaa...want to do html rest 15 min?..tumko 
 .founder {
 	margin-top: 8%;
 	text-align: center;
+	margin: 8% auto;
 	width: 70%;
 	padding: 3%;
   background-color: rgb(219, 214, 214);
@@ -141,13 +126,7 @@ now i am out of study zone..hehehe..achaa...want to do html rest 15 min?..tumko 
 	border-radius: 50%;
 }
 
-
-/* you can give color to icons also */
 .font-icon {
 	color: blue;
 	background-color: coral;
 }
-
-
-/* you have decrease the width oof all the section to 80%.. as that of img section at the top...ok?...par kyu
-it loooks empty hehe..accha ji oooo*/
