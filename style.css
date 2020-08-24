@@ -5,22 +5,22 @@ body {
 
 .box {
   width: 100px;
-  height: 120px;
+  height: 110px;
   text-align: center;
   font-size: 12px;
-  border: 1px dotted black;
+  border: 1px solid rgba(0, 0, 0, 0.671);
   margin: 1px;
+  border-radius: 10px;
+  background-color: rgba(122, 190, 133, 0.637);
 }
 
 .monopoly {
   width: 100%;
   margin: 1% auto;
-  background-color: lavender;
-  
 } 
 
 .left-right div {
-  width: 160px;
+  width: 150px;
   
 }
 
@@ -34,9 +34,11 @@ body {
 }
 
 .name {
-  margin-top: 60%;
+  margin-top: 57%;
   /* margin: auto auto; */
-  margin-left: 20% ;
+  text-align: center;
+  justify-content: center;
+  margin-left: 17% ;
   transform: rotate(315deg);
   font-family: 'Stalinist One';font-size: 48px;
 }
@@ -55,19 +57,19 @@ body {
 
 .left div{
   float: left;
-  padding: 10px ;
+  padding: 8px ;
   writing-mode: vertical-rl;
 }
 
 .right {
-  /* float: right; */
-  margin-left: 39.7%;
+  float: right;
+  margin-left: 47%;
   flex-direction: column;
- 
 }
 
 .right div {
-  padding: 10px;
+  float: right;
+  padding: 8px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 
