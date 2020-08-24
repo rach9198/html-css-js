@@ -190,12 +190,6 @@ body {
 }
 
 .middle-middle {
-  /* width of each box?38px*4 39*4...but height 38*4..thik hai na?yo*/
-  /* width: 117px; */
-  /* height of each box?38 *3hi hai ...why top and bottom distorting and not middle*/
-  /* height: 117px; */
-
-  
     top:40%;
     left: 45%;
     /* width: 1px; */
@@ -438,61 +432,3 @@ body {
   border: 0.5px solid black;
   width: 57.5px;
 } */
-
-
-/* now we will do animation. as soon as user lands up her, goti will drop from top
-what we call goti in english?no...pawn may be..tujay be nai pata😂😂 */
-
-
-/* 
-.sub-box-tl .red-pawn {
-  font-size: xx-large;
-  color: red;
-   /* where we want some kind of moment, we use animation property. it has 3 things: name of animation, duration and type of animation */
-/* u can define these 3 things in one line or sepreate */
-/* animation: redMovemet .3s linear; */
-/* or 
-   animation-name: redMovement;
-   animation-duration: 2s;
-   /* animation-timing-function: linear; 
-   animation-timing-function: ease-out;
-   /* u check out other */
-/* orther most commly used are in-out, out-inye dekha hai..video me..ok */
-/* u know animation?not inn detaaail */
-
-/* if u want keep repeating the animation */
-/* animation-iteration-count: infinite; */
-/* bydefault only once will occure 
-}
-
-/* to define animation, we will use @keyframe animationName 
-@keyframes redMovement {
-  /* now, we have to tell at what time what should happen...2 seconds will be convered to 100%..50% means 1 second.right?hellohaaaaaaan..25% means ?0.5yo 
-  0% {
-    /* withit define the style what should happen at 0% ie in starting */
-/* initially othing should be seen */
-/* visibility: hidden; */
-/* color: #fff; 
-    transform: translateY(-500%);
-  }
-  25% {
-    transform: translateY(-400%);
-  }
-  50% {
-    transform: translateY(-300%);
-
-  }
-  75% {
-
-    transform: translateY(-200%);
-
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* got it? at last🤣🤣🤣🔥🔥🔥
-translateY will change postion with respect to Y axis and transalteX wrt X axishh.aaaannnnn???
-y ka bolne se kaafi hai...x z i can understand ..kitna type karoge sir😱 
- */
