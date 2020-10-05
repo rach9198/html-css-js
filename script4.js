@@ -42,14 +42,16 @@ inputListItem.addEventListener('keypress', function(e){
 });
 
 function deleteToDo(event) {
-  // console.log(event); 
+  console.log(event); 
   // console.log(event.path[0].dataset);
 
   let deleteId = event.path[0].dataset.id;
 
-  allToDo = allToDo.filter(function(obj){
+  // allToDo = allToDo.filter(function(obj){
+  //   console.log(obj);
+  //  });
 
-    console.log(obj);
-   });
+  allToDo = allToDo.filter(el => +el.id !== +deleteId);
 
+  ui(allToDo);
 }
